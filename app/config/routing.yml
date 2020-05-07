@@ -1,0 +1,16 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+api: 
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix: /
+
+interactiveSVGBundle:
+    resource: "@ArtgrisInteractiveSVGBundle/Controller/"
+    type: annotation
+    prefix: /_svg
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc

@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+<link rel="stylesheet" href="{{ asset('bundles/artgrisinteractivesvg/css/front/front.css') }}"/>
+{% endblock %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            {{ interactive('world.svg') }}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+
+<script src="{{ asset('js/jquery-3.1.1.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>    
+<script src="{{ asset('bundles/artgrisinteractivesvg/js/front/front.js') }}"></script>
+{% endblock %}

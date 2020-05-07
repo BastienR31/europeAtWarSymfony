@@ -1,0 +1,16 @@
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/artgrisinteractivesvg/css/front/front.css') }}"/>
+{% endblock %}
+
+{% block content %}
+    <h1>Index</h1>
+    <p class="important">
+        Welcome to my awesome mili.
+    </p>
+{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset('js/jquery-3.1.1.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>    
+    <script src="{{ asset('bundles/artgrisinteractivesvg/js/front/front.js') }}"></script>
+{% endblock %}

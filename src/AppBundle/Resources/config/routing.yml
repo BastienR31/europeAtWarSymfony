@@ -1,0 +1,4 @@
+region:
+    type: rest
+    prefix: /api/region
+    resource: AppBundle\Controller\Api\RegionController
